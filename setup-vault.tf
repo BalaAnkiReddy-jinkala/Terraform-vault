@@ -21,7 +21,7 @@ data "vault_kv_secret_v2" "example" {
   name  = "test-screct" // change it according to your secret
 }
 resource "aws_instance" "my_instance" {
-  ami           = "ami-053b0d53c279acc90"
+  ami           = "ami-04b4f1a9cf54c11d0"
   instance_type = "t2.micro"
 
   tags = {
