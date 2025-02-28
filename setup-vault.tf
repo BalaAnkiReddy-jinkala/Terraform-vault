@@ -17,7 +17,7 @@ provider "vault" {
 }
 
 data "vault_kv_secret_v2" "example" {
-  mount = "mv" // change it according to your mount
+  mount = "kv" // change it according to your mount
   name  = "test-screct" // change it according to your secret
 }
 resource "aws_instance" "my_instance" {
